@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+        <script defer src="./bookwormscript.js"></script>
+    </head>
+    <body class="createacc-page">
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__logo--image"src="./image,icons and audio/openbook.png" alt="openbook">
+                <h1 class="header__logo--name">BOOKWORM</h1>
+            </div>
+        </header>
+        <section class="signup">
+            <h2 class="welcome">Welcome,Book wormies!</h2>
+            <div id="error"></div><div id="error"></div>
+            <form class="form" id="form" action="/" method="GET">
+                <div class="signup__info" id="signup-form">
+                    <h4 class="signup__question">Email Address<span>*</span></h4>
+                    <input class="signup__info--email" id="signup-email" type="email" name="email-address" placeholder="Enter your email address" required>
+                    <h4 class="signup__question">Username<span>*</span></h4>
+                    <input class="signup__info--name" id="username" type="text" name="username" placeholder="Set your username" required>
+                    <h4 class="signup__question">Password<span>*</span></h4>
+                    <input class="signup__info--pass" id="signup-password" type="password" name="password" placeholder="Set your password" required>
+                    <h4 class="signup__question">Confirm Your Password<span>*</span></h4>
+                    <input class="signup__info--confirmpass" id="signup-conpass" type="password" name="password" placeholder="Confirm your password" required>  
+                </div> 
+                <button class="btn--signup" id="signup" type="submit"> Sign Up </button>    
+            </form>
+        </section> 
+        
+        <footer class="footer">
+            <p id="footer__about"><a href="./aboutme.html">About Me</a></p>
+            <p id="footer__contact"><a href="./contactme.html">Contact Me</a></p>
+            
+        </footer>
+    </body>
+</html>              
