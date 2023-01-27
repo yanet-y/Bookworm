@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+    </head>
+    <body class="createacc-page container-fluid d-md-flex flex-row flex-wrap gap-5 bg-light-subtle">
+        <header class="header d-flex justify-content-between position-absolute top-0 start-0 align-items-center bg-dark-subtle py-1 px-0 h-25 w-100">
+            <div class="header__logo d-flex h-100 p-0 align-items-center">
+                <img class="header__logo--image img-fluid rounded float-start p-0 mb-0" width="75" height="75" src="./image,icons and audio/openbook.png" alt="openbook">
+                <h1 class="header__logo--name mb-0 h1 ">BOOKWORM</h1>
+            </div>
+        </header>
+        <section class="signup container-fluid d-md-flex flex-column justify-content-between gap-5 mt-5 pt-5">
+            <h2 class="welcome pt-5 mt-5 h3">Welcome,Book wormies!</h2>
+            <form class="form needs-validation" id="form" novalidate>
+                <div class="input-area" id="signup-form">
+                    <h4 class="signup__question">Email Address<span>*</span></h4>
+                    <input class="signup__info--email form-control" id="signup-email" type="email" name="email-address" placeholder="Enter your email address" required>
+                    <div class="invalid-feedback">Enter Email</div>
+                </div>
+                <div class="input-area">
+                    <h4 class="signup__question">Username<span>*</span></h4>
+                    <input class="signup__info--name form-control" id="username" type="text" name="username" placeholder="Set your username" required>
+                    <div class="invalid-feedback">Enter Username</div>
+                </div>
+                <div class="input-area">
+                    <h4 class="signup__question">Password<span>*</span></h4>
+                    <input class="signup__info--pass form-control" id="signup-password" type="password" name="password" placeholder="Set your password" required>
+                    <div class="invalid-feedback">Enter Password</div>
+                </div>
+                <div class="input-area">
+                    <h4 class="signup__question">Confirm Your Password<span>*</span></h4>
+                    <input class="signup__info--confirmpass form-control" id="signup-conpass" type="password" name="password" placeholder="Confirm your password" required> 
+                    <div class="invalid-feedback">Confirm Password</div>
+                </div>
+                    
+                     
+                
+                <button class="btn--signup" id="signup" type="submit"> Sign Up </button>    
+            </form>
+        </section>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+        </script> 
+        
+        <footer class="footer d-flex justify-content-center gap-lg-5 bg-dark-subtle w-100 h-25 mb-0 py-1 px-0 text-center">
+            <p class="footer__about fs-5 fw-bold text-dark "><a class="text-decoration-none" href="./aboutme.html">About Me</a></p>
+            <p class="footer__contact fs-5 fw-bold text-dark"><a class="text-decoration-none"  href="./contactme.html">Contact Me</a></p>
+            
+        </footer>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>              
